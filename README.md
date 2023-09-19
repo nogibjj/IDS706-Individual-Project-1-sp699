@@ -38,8 +38,13 @@
 
 
 ## :ballot_box_with_check: In progress
-__`Step 1`__ : Set up with the necessary files to build GitHub Repository such as Makefile, requirements.txt, main.yml, Dockerfile, devcontainer.json, etc.</br>
-__`Step 2`__ : Create a __lib.py__ file that shares the common code between the script and notebook and a __script.py__ file performing the descriptive statistics using Pandas. To create two files for testing, __test_lib.py__ and __test_script.py__, where lib.py has functionality to load the data, and script.py has functionality to calculate statistics from the data, display them in tabular form, and visualize the statistics using a boxplot, you can follow the Python example code and descriptions below:</br>
+__`Step 1`__ : Set up with the necessary files to build GitHub Repository such as Makefile, requirements.txt, yaml files, and etc. </br>
+  * __Makefile__: Include Install, Test, Format, and Lint
+  * __requirements.txt__: Add core packages (e.g., pytest(v.22.3.0), pytest(v.7.1.3), pytest-cov(v.4.0.0), pylint(v.2.15.3), nbval(v.0.10.0), ruff(v.0.0.290), black(v.22.3.0), pandas(v.2.1.0), matplotlib(v.3.7.1))
+  * __yaml__: 4 different yaml files for install, test, format, and lint</br>
+
+__`Step 2`__
+* Create a __lib.py__ file that shares the common code between the script and notebook and a __script.py__ file performing the descriptive statistics using Pandas. To create two files for testing, __test_lib.py__ and __test_script.py__, where lib.py has functionality to load the data, and script.py has functionality to calculate statistics from the data, display them in tabular form, and visualize the statistics using a boxplot, you can follow the Python example code and descriptions below:</br>
 * `lib.py` ([Link](https://github.com/suim-park/Individual-Project-1/blob/main/lib.py))</br>
 ```Python
 # Build lib.py to adjust any system
@@ -176,7 +181,7 @@ __`Step 4`__ : Check whether GitHub Action is working correctly for installing, 
   - Install the packages using __requirements.txt__ (e.g., Pandas, Numpy, Matlibplot, and OS)</br>
 * `Lint`
   - Lint the code by __Ruff__</br></br>
-<img src="https://github.com/suim-park/Individual-Project-1/assets/143478016/e074207c-4df4-4122-99c6-ef43b7c46e94.png" width="200" height="130"/></br>
+<img src="https://github.com/nogibjj/Suim-Park-Individual-Project-1/assets/143478016/c0afdb20-3559-4b3c-aceb-0964ddd87705.png" width="830" height="150"/></br>
 * `Test`
   - Test the Jupyter Notebook with __nbval plugin__ for pytest</br>
   ![image](https://github.com/suim-park/Individual-Project-1/assets/143478016/a4ee8144-a02f-45a1-aaf6-0c435de6adb2)</br>
@@ -184,9 +189,11 @@ __`Step 4`__ : Check whether GitHub Action is working correctly for installing, 
 <img src="https://github.com/suim-park/Individual-Project-1/assets/143478016/4057be74-8c52-49be-b354-b973e1ebe4bc.png" width="670" height="300"/></br>
 * `Format`
   - Do Black Formatting</br>
-<img src="https://github.com/suim-park/Individual-Project-1/assets/143478016/435c6715-5028-46c7-9a3b-f0cfa3c83741.png" width="450" height="270"/></br>
+![image](https://github.com/nogibjj/Suim-Park-Individual-Project-1/assets/143478016/e298cdc1-cc97-4bcf-8d37-fd189bc143b8)</br>
 
 
 ## :ballot_box_with_check: Summary
-  : The results of the statistical analysis of the 'Auto.csv' data and the boxplots of variables. I made the demo video, which explains this project in detail, and you can access it by clicking **[here](https://github.com/suim-park/Mini-Project-3/blob/main/Summary.pdf)**.</br></br>
+* The results of the statistical analysis of the 'Auto.csv' data and the boxplots of variables. I made a Jupyter Notebook, which explains this project briefly, and you can access this notebook by clicking **[here](https://github.com/nogibjj/Suim-Park-Individual-Project-1/blob/main/Project-notebook.ipynb)**.</br>
+* Demo Video: This demo video will show you a detailed explanation of continuous integration using GitHub Actions of Python data science project(individual project #1).
+  - [Click Here!:video_camera:]() </br>
   :exclamation: ***Click on the link to go directly to the 'Demo video for project 1'***
