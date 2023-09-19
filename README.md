@@ -6,12 +6,12 @@
 ## :ballot_box_with_check: Requirements
 * __`Jupyter Notebook`__ with:
   - Cells that perform __descriptive statistics using Polars or Panda__
-  - Tested by using nbval plugin for __pytest__
+  - Tested by using __nbval plugin__ for __pytest__
 *	__`Python Script`__ performing the same descriptive statistics using Polars or Panda
 * __`lib.py`__ file that shares the common code between the script and notebook
 * __`Makefile`__ with the following:
   - Run all tests __(must test notebook and script and lib)__
-  - Formats code with Python __black__
+  - Formats code with __Python Black__
   - Lints code with __Ruff__
   - Installs code via:  __pip install -r requirements.txt__
 *	__`test_script.py`__ to test script
@@ -178,7 +178,7 @@ __`Step 3`__ : Verify that all files are working correctly and see the statistic
 
 __`Step 4`__ : Check whether GitHub Action is working correctly for installing, linting, testing, and formatting.</br>
 * `Install`
-  - Install the packages using __requirements.txt__ (e.g., Pandas, Numpy, Matlibplot, and OS)</br>
+  - Install the packages using __requirements.txt__ (e.g., Pandas, Numpy, Matplotlib, and OS)</br>
 * `Lint`
   - Lint the code by __Ruff__</br></br>
 <img src="https://github.com/nogibjj/Suim-Park-Individual-Project-1/assets/143478016/c0afdb20-3559-4b3c-aceb-0964ddd87705.png" width="830" height="150"/></br>
