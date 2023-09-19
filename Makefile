@@ -7,14 +7,14 @@ test:
 	py.test --nbval *.ipynb
 
 format:
-	black *.ipynb &&\
+	nbqa black *.ipynb &&\
 	black *.py &&\
 		black test_*.py
 
 lint:
 	ruff check test_*.py &&\
 		ruff check *.py
-	ruff check *.ipynb
+	nbqa ruff check *.ipynb
 
 deploy:
 	# deploy goes here
