@@ -178,14 +178,14 @@ __`Step 3`__ : Verify that all files are working correctly and see the statistic
 
 __`Step 4`__ : Check whether GitHub Action is working correctly for installing, linting, testing, and formatting.</br>
 * `Install`
-  - Install the packages using __requirements.txt__ (e.g., Pandas, Numpy, Matplotlib, and OS)</br>
+  - Install the packages in the __requirements.txt__ if the core packages for project are successfully installed or not (e.g., Black, Pylint, Ruff, Pytest, Nbval, Nbqa, Pandas, and Matplotlib)</br>
 * `Lint`
-  - Lint the code by __Ruff__</br></br>
+  - Lint the code by __Ruff__ </br></br>
 <img src="https://github.com/nogibjj/Suim-Park-Individual-Project-1/assets/143478016/c0afdb20-3559-4b3c-aceb-0964ddd87705.png" width="830" height="150"/></br>
 * `Test`
   - Test the Jupyter Notebook with __nbval plugin__ for pytest</br>
   ![image](https://github.com/suim-park/Individual-Project-1/assets/143478016/a4ee8144-a02f-45a1-aaf6-0c435de6adb2)</br>
-  - Test two test_script.py and test_lib.py files to see the Python script and library work accurately and efficiently</br>
+  - Test Python files such as __test_script.py__ and __test_lib.py__ files to see the Python script and library work accurately and efficiently</br>
 <img src="https://github.com/suim-park/Individual-Project-1/assets/143478016/4057be74-8c52-49be-b354-b973e1ebe4bc.png" width="670" height="300"/></br>
 * `Format`
   - Do Black Formatting</br>
