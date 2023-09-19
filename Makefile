@@ -8,13 +8,11 @@ test:
 
 format:
 	nbqa black *.ipynb &&\
-	black *.py &&\
-		black test_*.py
+	black *.py && black test_*.py
 
 lint:
-	ruff check test_*.py &&\
-		ruff check *.py
-	nbqa ruff check *.ipynb
+	ruff check test_*.py && ruff check *.py
+	nbqa ruff *.ipynb
 
 deploy:
 	# deploy goes here
