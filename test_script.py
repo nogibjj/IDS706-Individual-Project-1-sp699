@@ -1,4 +1,4 @@
-# Test lib.py
+# Test script.py
 from script import describe_stat, calculate_stat, build_boxplot
 
 
