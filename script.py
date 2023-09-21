@@ -17,7 +17,7 @@ def describe_stat(dataset):
     return data_desc
 
 
-# Calculate mean, median, standard deviation of each columns
+# Calculate the mean, median, and standard deviation of each column
 def calculate_stat(dataset):
     data = pd.read_csv(dataset)
 
@@ -25,12 +25,12 @@ def calculate_stat(dataset):
     # Mean
     for column in range(1, num_columns - 3):
         column_name = data.columns[column]
-        column_data = data.iloc[:, column]  # 현재 열의 데이터
+        column_data = data.iloc[:, column]  # Current column data
         column_data = pd.to_numeric(column_data, errors="coerce")
         column_data = column_data.dropna()
-        col_mean = np.mean(column_data)  # 평균 계산
-        col_median = np.median(column_data)  # 중앙값 계산
-        col_std = np.std(column_data)  # 표준편차 계산
+        col_mean = np.mean(column_data)  # Calculate the mean
+        col_median = np.median(column_data)  # Calculate the median
+        col_std = np.std(column_data)  # Calculate the standard deviation
 
         print(f"Column name: {column_name}")
         print(f"Mean: {col_mean}")
@@ -39,7 +39,7 @@ def calculate_stat(dataset):
         print()
 
 
-# Make a boxplot of each columns in csv file
+# Make a boxplot for each column in the CSV file
 def build_boxplot(dataset):
     data = load_data(dataset)
     numeric_columns = data.select_dtypes(include=["number"]).columns
@@ -48,16 +48,16 @@ def build_boxplot(dataset):
     folder_name = "Graphs"
     save_folder = os.path.join(directory_path, folder_name)
 
-    # 폴더가 존재하지 않는 경우 폴더를 생성
+    # Create the folder if it does not exist
     if not os.path.exists(save_folder):
         os.makedirs(save_folder)
 
     for column in numeric_columns[1:7]:
-        plt.figure()  # 새로운 그래프 생성
-        plt.boxplot(data[column].to_list())  # Box Plot 그리기
-        plt.title(f"{column} Box Plot")  # 그래프 제목 설정
-        plt.xlabel("Value")  # x축 레이블 설정
-        plt.ylabel("Distribution")  # y축 레이블 설정
+        plt.figure()  # Create a new plot
+        plt.boxplot(data[column].to_list())  # Draw a Box Plot
+        plt.title(f"{column} Box Plot")  # Set the title of the plot
+        plt.xlabel("Value")  # Set the x-axis label
+        plt.ylabel("Distribution")  # Set the y-axis label
 
         save_path = os.path.join(save_folder, f"boxplot {column}.png")
         plt.savefig(save_path)
