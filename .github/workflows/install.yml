@@ -1,5 +1,5 @@
-# install.yml
-name: install
+# Install.yml
+name: Install
 on:
   push:
     branches: [ "main" ]
