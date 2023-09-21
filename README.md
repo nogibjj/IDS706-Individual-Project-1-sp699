@@ -195,5 +195,5 @@ __`Step 4`__ : Check whether GitHub Action is working correctly for installing, 
 ## :ballot_box_with_check: Summary
 * The results of the statistical analysis of the 'Auto.csv' data and the boxplots of variables. I made a Jupyter Notebook, which explains this project briefly, and you can access this notebook by clicking **[here](https://github.com/nogibjj/Suim-Park-Individual-Project-1/blob/main/Project-notebook.ipynb)**.</br>
 * Demo Video: This demo video will show you a detailed explanation of continuous integration using GitHub Actions of Python data science project(individual project #1).
-  - [Click Here!:video_camera:]() </br>
+  - [Click Here!:video_camera:](https://youtu.be/iPAc95DQ1g4) </br>
   :exclamation: ***Click on the link to go directly to the 'Demo video for project 1'***
