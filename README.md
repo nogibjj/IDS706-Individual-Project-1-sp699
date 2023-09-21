@@ -192,7 +192,7 @@ __`Step 4`__ : Check whether GitHub Action is working correctly for installing, 
 ![image](https://github.com/nogibjj/Suim-Park-Individual-Project-1/assets/143478016/e298cdc1-cc97-4bcf-8d37-fd189bc143b8)</br>
 
 
-## :ballot_box_with_check: Summary
+## :ballot_box_with_check: Summary + Video
 * The results of the statistical analysis of the 'Auto.csv' data and the boxplots of variables. I made a Jupyter Notebook, which explains this project briefly, and you can access this notebook by clicking **[here](https://github.com/nogibjj/Suim-Park-Individual-Project-1/blob/main/Project-notebook.ipynb)**.</br>
 * Demo Video: This demo video will show you a detailed explanation of continuous integration using GitHub Actions of Python data science project(individual project #1).
   - [Click Here!:video_camera:](https://youtu.be/iPAc95DQ1g4) </br>
